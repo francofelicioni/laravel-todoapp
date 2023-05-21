@@ -2,13 +2,13 @@
 
 @section('content')
 <div class="container w-25 border p-4 mt-4">
-    <form>
+    <form action="{{ route('todos') }}" method="POST">
+        @csrf
         <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Task Title</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <div id="emailHelp" class="form-text">Create a new task</div>
+            <label for="title" class="form-label">Task title</label>
+            <input type="text" name="title" class="form-control">
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary">Create task</button>
     </form>
 </div>
 @endsection
