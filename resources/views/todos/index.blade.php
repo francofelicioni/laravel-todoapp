@@ -28,7 +28,7 @@
             </div>
 
             <div class="col-md-3 d-flex justify-content-end">
-                <form action="{{ route ('todos-destroy', [$todo->id]) }}" method="POST">
+                <form action="{{ route ('todos-delete', [$todo->id]) }}" method="POST">
                     @method('DELETE')
                     @csrf
                     <button class="btn btn-danger btn-sm">Delete</button>
