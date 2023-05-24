@@ -27,6 +27,15 @@
 
             <button type="submit" class="btn btn-primary">Create category</button>
         </form>
+
+        <div class="mt-4">
+            @foreach ($categories as $category )
+            <ul>
+                <li>{{ $category ->name }} - {{ $category -> color }}</li>
+            </ul>
+            @endforeach
+        </div>
+
     </div>
 </div>
 
