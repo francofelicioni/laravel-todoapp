@@ -35,15 +35,15 @@
 
 <body>
     <nav class="navbar navbar-expand-lg bg-dark ">
-        <div class="container-fluid">
-            <p class="navbar-brand text-light" href="#">TASKS DASHBOARD</p>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="d-flex justify-content-center align-items-md-center">
+            <p class="navbar-brand m-0 mx-4 text-light">TASKS DASHBOARD</p>
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-            </button>
+            </button> -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <div class="navbar-nav">
-                    <a class="nav-link text-light" href="{{ route ('todos') }}">Tasks </a>
-                    <a class="nav-link text-light" href="#">Categories</a>
+                    <a class="nav-link text-warning" href="{{ route ('todos') }}">Tasks </a>
+                    <a class="nav-link text-warning" href="{{ route ('categories.index') }}">Categories</a>
                 </div>
             </div>
         </div>
