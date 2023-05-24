@@ -31,8 +31,8 @@ class CategoriesController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'name' => 'required | unique: categories | max:255',
-            'color' => ' required | max:7'
+            'name' => 'required|unique:categories| max:255',
+            'color' => ' required|max:7'
         ]);
 
         $category = new Category;
@@ -76,7 +76,7 @@ class CategoriesController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy($id)
     {
         $category = Category::find($id);
         $category->delete();
